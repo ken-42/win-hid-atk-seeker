@@ -8,13 +8,13 @@ from all_events_parser import events_parser
 from Usb import Usb 
 from util import write_it, thanks
 
-def main(): #in input va specificato l'hive SYSTEM
+def main():
     parser = argparse.ArgumentParser(description="Hive SYSTEM for the extraction of USBs")
     parser.add_argument("hiveSys", type=str, help="Path to the hive SYSTEM")
     args = parser.parse_args()
     print("USB extraction in progress...")
     try:
-        usb_list = extractUSB(sys.argv[1]) #estrazione di tutte le subkey di USB
+        usb_list = extractUSB(sys.argv[1])
         print("[+] Extraction successful!\n\n")
         while True:
             print("What do you do?\n")
