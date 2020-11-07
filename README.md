@@ -2,6 +2,8 @@
 
 Windows HID Attack Seeker allows you to extract digital evidence to help detect HID attacks on Windows 10.
 
+![alt text](https://github.com/ken-42/win-hid-atk-seeker/blob/master/images/logo.png)
+
 This tool has been tested with Tsurugi Linux.
 
 Requirements:
