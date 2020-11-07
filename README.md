@@ -1,6 +1,6 @@
 # Windows HID Attack Seeker :detective:
 
-Windows HID Attack Seeker is a Phyton3 tool that allows you to study some digital evidence to help detect HID attacks on Windows 10.
+Windows HID Attack Seeker is a Phyton3 tool that allows you to extract information from some digital evidence to help detect HID attacks on Windows 10.
 
 The evidences supported are:
 - USB Devices information from SYSTEM hive;
