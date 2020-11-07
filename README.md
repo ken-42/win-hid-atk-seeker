@@ -2,7 +2,7 @@
 
 Windows HID Attack Seeker is a Phyton3 tool that allows you to study some digital evidence to help detect HID attacks on Windows 10.
 
-This tool has been tested with Tsurugi Linux.
+This tool has been tested on Tsurugi Linux.
 
 
 ![alt text](https://github.com/ken-42/win-hid-atk-seeker/blob/master/images/logo.png)
