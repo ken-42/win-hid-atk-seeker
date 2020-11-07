@@ -19,7 +19,7 @@ This tool has been tested with Tsurugi Linux.
 To extract data from ShimCache a part of the https://github.com/mandiant/ShimCacheParser code has been converted to Python3.
 
 ## Usage:
-The analysis can be started by running the command:
+Run the tool with the command:
 ```
 python3 main.py SYSTEM
 ```
