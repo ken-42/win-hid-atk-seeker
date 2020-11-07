@@ -18,7 +18,7 @@ This tool has been tested on Tsurugi Linux.
 
 
 ### Requirements :package:
-- python3
+- python 3.5
 - python-registry: https://github.com/williballenthin/python-registry
 - libscca: https://github.com/libyal/libscca (with libscca-alpha-20191222.tar.gz)
 - python-evtx: https://github.com/williballenthin/python-evtx
