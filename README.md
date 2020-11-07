@@ -15,17 +15,36 @@ This tool has been tested with Tsurugi Linux.
 - libscca: https://github.com/libyal/libscca
 - python-evtx: https://github.com/williballenthin/python-evtx
 
-
+### Notes
+To extract data from ShimCache a part of the https://github.com/mandiant/ShimCacheParser code has been converted to Python3.
 
 ## Usage:
 The analysis can be started by running the command:
 ```
 python3 main.py SYSTEM
 ```
-where SYSTEM indicates the Windows 10 SYSTEM hive.
+where ```SYSTEM``` is the Windows 10 SYSTEM hive.
 
-To continue the analysis you need:
-- prefetch files: C:\Windows\Prefetch
-- event log files: C:\Windows\System32\winevt\Logs
+### First step: USB Information gathering - Which USB and When
+The tool detect USB devices detected from OS that you analyze.
 
-To extract data from ShimCache a part of the https://github.com/mandiant/ShimCacheParser code has been converted to python3
+At this point you can:
+- press ```1``` to print all information gathered regarding all USB detected, identified with a ```dummy ID``` or
+- press ```2``` to go to the next step.
+
+
+### Second step: Temporal interval definition
+The collection of information regarding this step is done based on the timestamps of insert and eject that every USB detected have.
+When you press ```2``` on previous step, you can choose a USB device (typing one dummy ID) to set temporal interval used to define which information extract from Prefetch and Logs files.
+
+
+### Third step: ShimCache, Prefetch and Logs Informatin gathering - Input & Output
+Once the interval is set, you can choose what information extract on an output file:
+- press ```1``` for ShimCache (information extracted from SYSTEM hive, already in input);
+- press ```2``` for Prefetch, and in this case you must set the path of Prefetch files directory (that in Windows 10 is C:\Windows\Prefetch);
+- press ```3``` for Windows Log.
+
+In cases ```2``` and ```3``` you must set the directory of the files that you choose.
+On Windows 10 these directory are respectively in C:\Windows\Prefetch and C:\Windows\System32\winevt\Logs.
+
+Outputs are provided in .csv for ShimCache, .txt for Prefetch and .xml and .txt for Logs.
