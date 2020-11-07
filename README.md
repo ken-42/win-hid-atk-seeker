@@ -1,17 +1,23 @@
 # Windows HID Attack Seeker
 
-Windows HID Attack Seeker allows you to extract digital evidence to help detect HID attacks on Windows 10.
-
-![alt text](https://github.com/ken-42/win-hid-atk-seeker/blob/master/images/logo.png)
+Windows HID Attack Seeker is a Phyton3 tool that allows you to study some digital evidence to help detect HID attacks on Windows 10.
 
 This tool has been tested with Tsurugi Linux.
 
-Requirements:
+
+![alt text](https://github.com/ken-42/win-hid-atk-seeker/blob/master/images/logo.png)
+
+
+
+### Requirements:
 - python3
 - python-registry: https://github.com/williballenthin/python-registry
 - libscca: https://github.com/libyal/libscca
 - python-evtx: https://github.com/williballenthin/python-evtx
 
+
+
+## Usage:
 The analysis can be started by running the command:
 ```
 python3 main.py SYSTEM
